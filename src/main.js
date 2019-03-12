@@ -12,4 +12,9 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Lato'
   })
+
+  head.meta.push({
+    name: 'google-site-verification',
+    content: 'gGyBkoUjClHZroXFFqf8Yx7t4jpnA0JuI3izHSaiIjs'
+  })
 }
