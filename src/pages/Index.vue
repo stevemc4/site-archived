@@ -39,7 +39,7 @@ export default {
   name: 'Home',
   components: {MapPinIcon, FacebookIcon, GithubIcon, LinkedinIcon, MailIcon},
   metaInfo: {
-    title: 'Dhika Rizky'
+    titleTemplate: 'Dhika Rizky'
   }
 }
 </script>
