@@ -11,14 +11,14 @@
           </div>
           <div class="md:pin-b md:pin-l mt-4 md:mt-0 md:px-6 w-full mb-6 flex flex-col-reverse md:flex-row md:absolute items-center">
               <div class="md:flex-grow mt-2">
-                <g-link class="no-underline text-grey-darkest text-lg mr-4" href="/blog">Blog</g-link>
-                <g-link class="no-underline text-grey-darkest text-lg mr-4" href="/resume">Resume</g-link>
+                <g-link class="no-underline text-grey-darkest text-lg mr-4" to="/blog">Blog</g-link>
+                <g-link class="no-underline text-grey-darkest text-lg mr-4" to="/resume">Resume</g-link>
               </div>
               <div>
-                <g-link class="no-underline text-grey-darkest text-lg mr-4" href="https://github.com/stevemc4"><github-icon/></g-link>
-                <g-link class="no-underline text-grey-darkest text-lg mr-4" href="https://linkedin.com/in/stevemc4/"><linkedin-icon/></g-link>
-                <g-link class="no-underline text-grey-darkest text-lg mr-4" href="https://facebook.com/stevemc4/"><facebook-icon/></g-link>
-                <g-link class="no-underline text-grey-darkest text-lg mr-4" href="mailto:deka_r@outlook.com"><mail-icon/></g-link>
+                <a class="no-underline text-grey-darkest text-lg mr-4" href="https://github.com/stevemc4"><github-icon/></a>
+                <a class="no-underline text-grey-darkest text-lg mr-4" href="https://linkedin.com/in/stevemc4/"><linkedin-icon/></a>
+                <a class="no-underline text-grey-darkest text-lg mr-4" href="https://facebook.com/stevemc4/"><facebook-icon/></a>
+                <a class="no-underline text-grey-darkest text-lg mr-4" href="mailto:deka_r@outlook.com"><mail-icon/></a>
               </div>
             </div>
         </div>
@@ -39,7 +39,45 @@ export default {
   name: 'Home',
   components: {MapPinIcon, FacebookIcon, GithubIcon, LinkedinIcon, MailIcon},
   metaInfo: {
-    titleTemplate: 'Dhika Rizky'
+    titleTemplate: 'Dhika Rizky',
+    meta: [
+      {
+        name: 'description',
+        content: 'Web Programmer, Penggemar Pop Kultur Jepang, dan Sedikit Wibu'
+      },
+      {
+        itemprop: 'name',
+        content: 'Dhika Rizky'
+      },
+      {
+        itemprop: 'description',
+        content: 'Web Programmer, Penggemar Pop Kultur Jepang, dan Sedikit Wibu'
+      },
+      {
+        name: 'og:url',
+        content: 'https://dhikarizky.ga'
+      },
+      {
+        name: 'og:type',
+        content: 'website'
+      },
+      {
+        name: 'og:title',
+        content: 'Dhika Rizky'
+      },
+      {
+        name: 'og:description',
+        content: 'Web Programmer, Penggemar Pop Kultur Jepang, dan Sedikit Wibu'
+      },
+      {
+        name: 'twitter:title',
+        content: 'Dhika Rizky'
+      },
+      {
+        name: 'twitter:description',
+        content: 'Web Programmer, Penggemar Pop Kultur Jepang, dan Sedikit Wibu'
+      }
+    ]
   }
 }
 </script>
