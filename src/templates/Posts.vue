@@ -14,6 +14,7 @@ query ($path: String!) {
     title
     content
     date
+    slug
   }
 }
 </page-query>
@@ -29,7 +30,45 @@ export default {
   },
   metaInfo () {
     return {
-      title: this.$page.posts.title
+      title: this.$page.posts.title,
+      meta: [
+        {
+            name: 'description',
+            content: 'Catatan-Catatan Dan Opini Penuh Wewibuan'
+        },
+        {
+            itemprop: 'name',
+            content: `${this.$page.posts.title} - Dhika Rizky\'s Notes`
+        },
+        {
+            itemprop: 'description',
+            content: 'Catatan-Catatan Dan Opini Penuh Wewibuan'
+        },
+        {
+            name: 'og:url',
+            content: `https://dhikarizky.ga/blog/${this.$page.posts.slug}`
+        },
+        {
+            name: 'og:type',
+            content: 'website'
+        },
+        {
+            name: 'og:title',
+            content: `${this.$page.posts.title} - Dhika Rizky\'s Notes`
+        },
+        {
+            name: 'og:description',
+            content: 'Catatan-Catatan Dan Opini Penuh Wewibuan'
+        },
+        {
+            name: 'twitter:title',
+            content: `${this.$page.posts.title} - Dhika Rizky\'s Notes`
+        },
+        {
+            name: 'twitter:description',
+            content: 'Catatan-Catatan Dan Opini Penuh Wewibuan'
+        }
+      ]
     }
   },
   computed: {

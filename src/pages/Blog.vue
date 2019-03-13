@@ -36,6 +36,47 @@ export default {
         formatDate(date){
             return format(new Date(date), 'DD MMMM YYYY HH:mm', {locale: id})
         }
+    },
+    metaInfo: {
+        title: 'Blog',
+        meta: [
+        {
+            name: 'description',
+            content: 'Catatan-Catatan Dan Opini Penuh Wewibuan'
+        },
+        {
+            itemprop: 'name',
+            content: 'Dhika Rizky\'s Notes'
+        },
+        {
+            itemprop: 'description',
+            content: 'Catatan-Catatan Dan Opini Penuh Wewibuan'
+        },
+        {
+            name: 'og:url',
+            content: 'https://dhikarizky.ga/blog'
+        },
+        {
+            name: 'og:type',
+            content: 'website'
+        },
+        {
+            name: 'og:title',
+            content: 'Dhika Rizky\'s Notes'
+        },
+        {
+            name: 'og:description',
+            content: 'Catatan-Catatan Dan Opini Penuh Wewibuan'
+        },
+        {
+            name: 'twitter:title',
+            content: 'Dhika Rizky\'s Notes'
+        },
+        {
+            name: 'twitter:description',
+            content: 'Catatan-Catatan Dan Opini Penuh Wewibuan'
+        }
+        ]
     }
 }
 </script>
