@@ -39,6 +39,7 @@ export default {
     },
     metaInfo: {
         title: 'Blog',
+        titleTemplate: '%s - Dhika Rizky\'s Notes',
         meta: [
         {
             name: 'description',

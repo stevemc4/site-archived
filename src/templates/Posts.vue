@@ -31,6 +31,7 @@ export default {
   metaInfo () {
     return {
       title: this.$page.posts.title,
+      titleTemplate: '%s - Dhika Rizky\'s Notes',
       meta: [
         {
             name: 'description',
