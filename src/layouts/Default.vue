@@ -8,8 +8,8 @@
             <g-link class="text-grey-darkest no-underline" to="/">Beranda</g-link>
             <chevron-right-icon height="16" width="16" class="mx-2"/>
             <g-link class="text-grey-darkest no-underline" to="/blog">Blog</g-link>
-            <chevron-right-icon height="16" width="16" class="mx-2"/>
-            <span class="text-grey-darkest no-underline">{{title}}</span>
+            <chevron-right-icon height="16" width="16" class="mx-2" v-if="title != undefined"/>
+            <span class="text-grey-darkest no-underline" v-if="title != undefined">{{title}}</span>
           </div>
         </nav>
         <div class="mt-12">
