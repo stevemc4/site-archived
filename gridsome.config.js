@@ -8,17 +8,6 @@ var tailwind = require('tailwindcss')
 
 module.exports = {
   siteName: 'Dhika Rizky',
-  // plugins: [
-  //   {
-  //     use: 'gridsome-plugin-tailwindcss',
-  //     options: {
-  //       config: 'tailwind.js'
-  //     }
-  //   },
-    // {
-    //   use: 'gridsome-plugin-purgecss'
-    // }
-  // ]
   css: {
     loaderOptions: {
       postcss: {
@@ -28,4 +17,5 @@ module.exports = {
       },
     },
   },
+  icon: 'src/favicon.png'
 }
