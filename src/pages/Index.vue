@@ -54,19 +54,19 @@ export default {
         content: 'Web Programmer, Penggemar Pop Kultur Jepang, dan Sedikit Wibu'
       },
       {
-        name: 'og:url',
+        property: 'og:url',
         content: 'https://dhikarizky.ga'
       },
       {
-        name: 'og:type',
+        property: 'og:type',
         content: 'website'
       },
       {
-        name: 'og:title',
+        property: 'og:title',
         content: 'Dhika Rizky'
       },
       {
-        name: 'og:description',
+        property: 'og:description',
         content: 'Web Programmer, Penggemar Pop Kultur Jepang, dan Sedikit Wibu'
       },
       {
