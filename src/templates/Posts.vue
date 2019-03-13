@@ -46,19 +46,19 @@ export default {
             content: 'Catatan-Catatan Dan Opini Penuh Wewibuan'
         },
         {
-            name: 'og:url',
+            property: 'og:url',
             content: `https://dhikarizky.ga/blog/${this.$page.posts.slug}`
         },
         {
-            name: 'og:type',
+            property: 'og:type',
             content: 'website'
         },
         {
-            name: 'og:title',
+            property: 'og:title',
             content: `${this.$page.posts.title} - Dhika Rizky\'s Notes`
         },
         {
-            name: 'og:description',
+            property: 'og:description',
             content: 'Catatan-Catatan Dan Opini Penuh Wewibuan'
         },
         {
